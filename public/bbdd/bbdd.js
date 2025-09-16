@@ -31,3 +31,11 @@ const prestamo = [
         "fechaLimite" : fechaLimite, // date
     }
 ];
+
+const destinatario = [
+    {
+        "codigo" : codigoDestinatario, // primary key // integer (12)
+        "nombreYApellido" : nombreYApellidoDestinatario, // // string (50)
+        "cargo" : cargoDestinatario // string (15)
+    }
+];
