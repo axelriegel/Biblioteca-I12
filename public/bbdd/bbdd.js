@@ -1,33 +1,33 @@
 const usuarios = [
     {
-        "codigo" : codigoUsuario,
-        "dni" : dniUsuario,
-        "nombreYApellido" : nombreYApellidoUsuario,
-        "email" : emailUsuario,
-        "cargo" : cargoUsuario,
-        "contrasena" : contrasenaUsuario,
+        "codigo" : codigoUsuario, // primary key // integer (12)
+        "dni" : dniUsuario, // integer (8)
+        "nombreYApellido" : nombreYApellidoUsuario, // string (50)
+        "email" : emailUsuario, // string (40)
+        "cargo" : cargoUsuario, // string (15)
+        "contrasena" : contrasenaUsuario, // string (12)
+        "active" : active // string (4)
     }
 ];
 
 const insumo = [
     {
-        "codigo" : codigoInsumo,
-        "familia" : familiaInsumo,
-        "nombre" : nombreInsumo,
-        "estado" : estadoInsumo,
-        "categoria" : categoriaInsumo,
-        "cantidad" : cantidadInsumo,
+        "codigo" : codigoInsumo, // primary key // integer (12)
+        "familia" : familiaInsumo,  // string (50)
+        "nombre" : nombreInsumo, // string (50)
+        "estado" : estadoInsumo, // string (12)
+        "categoria" : categoriaInsumo, // string (50)
+        "cantidad" : cantidadInsumo, // integer (5)
     },
-    
 ];
 
 const prestamo = [
     {
-        "codigo" : codigoPrestamo,
-        "fecha" : fechaPrestamo,
-        "insumo" : codigoInsumo,
-        "cantidad" : cantidadPrestamo,
-        "destinatario" : destinatario,
-        "fechaLimite" : fechaLimite,
+        "codigo" : codigoPrestamo, // primary key // integer (12)
+        "fecha" : fechaPrestamo, // date
+        "insumo" : codigoInsumo, // integer (12)
+        "cantidad" : cantidadPrestamo, // integer (5)
+        "destinatario" : destinatario, // string (50)
+        "fechaLimite" : fechaLimite, // date
     }
 ];
